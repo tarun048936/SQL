@@ -1,0 +1,15 @@
+use world;
+show tables;
+select * from country;
+select name, continent,region,localname from country;
+select name,indepyear from country where indepyear=1970;
+select name,gnp,gnp-20 from country;
+select name,continent,indepyear from country where continent in ('Asia','Africa');
+select name,continent from country where name in ('india','pakistan');
+select name,continent,indepyear from country where indepyear between 1947 and 1952;
+select name,LocalName,continent,indepyear,Region from country where indepyear between 1947 and 1952;
+select upper(name) from country;
+select lower(name) from country;
+select name,length(name) from country;
+select name,substr(name,1,4) from country;
+select name,indepyear, concat(name,indepyear) from country;  
